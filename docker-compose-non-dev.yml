@@ -42,7 +42,8 @@ services:
 
   superset:
     env_file: docker/.env-non-dev
-    image: *superset-image
+    # image: alphax123/superset:V1
+    image: alphax123/superset:V1:1
     container_name: superset_app
     restart: unless-stopped
     ports:
